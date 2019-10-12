@@ -17,4 +17,4 @@ Beforing using please checking the file folder path.
 For easy to use, here we give three used data: brcar_go.csv used for autoencoder_DCAP.py, brca_cox.csv used for uni_cox.R and  brca_cox2.csv used for Cox_DCAP. Due to file size limitation, we only uploaded brca miRNA data (brcar_go.csv) as an example. Users can build data  based on the format of the example. 
 
 # Contact
-Any questions can be sent to chaihuachaihua@qq.com
+This method is still on progress, any questions can be sent to chaihuachaihua@qq.com
