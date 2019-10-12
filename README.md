@@ -11,5 +11,7 @@ In this study, we utilized cancer datasets from the TCGA portal (https://tcga-da
 # Usage
 DCAP was a framework with three different method.  Firstly please use the autoencoder_DCAP.py to obtain representative composite features that can best rebuild all input multi-omics data. The table named fea.csv will be saved in the file folder. After that a table (Such as  brca_cox.csv) should be constructed by users, this table will be put into uni_cox.R (), and the generated file (such as brca_cox2.csv) will be processed by Cox_DCAP for getting the finally results. The CI_Cox$concordance is the C-index value obtained by DCAP_Cox and the CI-XGB is the C-index value obtained by XGBoost.
 
+Beforing using please checking the file folder path. 
+
 # Example
 For easy to use, in file folder named brca, we give three used data: brca_go.csv used for autoencoder_DCAP.py, brca_cox.csv used for uni_cox.R and  brca_cox2.csv used for Cox_DCAP.
