@@ -7,7 +7,7 @@ library('kernlab')
 library('plyr')
 library('caret')
 
-setwd('D:/pan-cancer/brca')
+setwd('D:/brca')
 
 kx2=read.csv('data_cox2.csv',row.names= 1)
 sdata=read.csv('brca_go.csv',row.names= 1)
