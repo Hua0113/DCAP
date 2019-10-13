@@ -1,4 +1,4 @@
-setwd('D:/pan-cancer/brca')
+setwd('D:/brca')
 library('imputeMissings')
 data=read.csv("brca_multitest.csv",row.names = 1)
 
