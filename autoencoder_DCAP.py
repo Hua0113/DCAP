@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-with open(r"C:\pypro\brca_go.csv", 'r') as f:
+with open(r"C:\pypro\brcatest_go.csv", 'r') as f:
     data = pd.read_csv(f)
 
 print(data.shape)
@@ -58,9 +58,6 @@ def decoder(x):
     return layer_2
 
 
-#encoder_op = encoder(X)
-#decoder_op = decoder(encoder_op)
-
 ##################################################################
 
 fc_1 = tf.layers.dense(inputs=X, units=n_hidden_1,
@@ -113,10 +110,4 @@ with tf.Session() as sess:
                 np.savetxt(r'C:\pypro\fea.csv', np.array(fea_output[0]), delimiter=',')
     print("Optimization Finished!")
 
-    # encode_decode = sess.run(
-    #     y_pred, feed_dict={X: mnist.test.images[:examples_to_show]})
-    # f, a = plt.subplots(2, 10, figsize=(10, 2))  #return fig，axes
-    # for i in range(examples_to_show):  
-    #     a[0][i].imshow(np.reshape(mnist.test.images[i], (28, 28)))  
-    #     a[1][i].imshow(np.reshape(encode_decode[i], (28, 28)))  
-    # plt.show() 
+
